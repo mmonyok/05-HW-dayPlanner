@@ -1,6 +1,3 @@
-//Questions:
-// 1) How do i get my date time to use "th" "st" "rd" "nd"
-
 // Time related variables
 let timeDisplay = document.getElementById("currentDay");
 let DateTime = luxon.DateTime;
@@ -14,6 +11,7 @@ let saveBtn = document.getElementsByClassName("saveBtn");
 let textArea = document.querySelectorAll("textarea");
 let hourDiv = document.querySelectorAll(".hour");
 
+// This array allows me to access the the text content of each div.
 let textContentEl = [
     $("#text8"),
     $("#text9"),
@@ -27,10 +25,7 @@ let textContentEl = [
     $("#text17"),
 ]
 
-// This displays the current day
-timeDisplay.textContent = DateTime.now().toLocaleString(DateTime.DATE_HUGE);
-
-// This array allows me to access the set times for each time slot
+// This array allows me to access the set times for each time slot.
 let setHours = [
     today.set({hour: 8}),
     today.set({hour: 9}),
@@ -44,26 +39,29 @@ let setHours = [
     today.set({hour: 17}),
 ];
 
-// Associates a specific hour with each timeslot
+// This displays the current day.
+timeDisplay.textContent = DateTime.now().toLocaleString(DateTime.DATE_HUGE);
+
+// This loop associates a specific hour with each timeslot.
 for (i = 0; i < hourDiv.length; i++) { 
     hourDiv[i].textContent = setHours[i].toLocaleString(hour); 
 }
 
-// I need to get it so each time of day changes the color coding for the slot
-
-if (setHours[9].get("hour") < currentHourStamp) {
-    textContentEl[9].attr("class", "past");
-}
-if (setHours[9].get("hour") > currentHourStamp) {
-    textContentEl[9].attr("class", "future");
-}
-if (setHours[9].get("hour") === currentHourStamp) {
-    textContentEl[9].attr("class", "present");
+// This loop will change the color of each time slot based on the hour.
+for (z = 0; z < setHours.length; z++) {
+    if (setHours[z].get("hour") < currentHourStamp) {
+        textContentEl[z].attr("class", "past");
+    }
+    if (setHours[z].get("hour") > currentHourStamp) {
+        textContentEl[z].attr("class", "future");
+    }
+    if (setHours[z].get("hour") === currentHourStamp) {
+        textContentEl[z].attr("class", "present");
+    }
 }
 
 // This function saves the content in the text areas.
 function saveTextContent() {
-    // saving entered content into an object
     let savedText = {
         hour8: textArea[0].value,
         hour9: textArea[1].value,
@@ -76,12 +74,12 @@ function saveTextContent() {
         hour16: textArea[8].value,
         hour17: textArea[9].value,
     };
-    // sending saved content to local storage and converting into a string
+    // This code will send saved content to local storage and convert it into a string.
     localStorage.setItem("savedText", JSON.stringify(savedText));
     return;
 };
 
-// This will render the saved content on the page so it stays there until you input new content.
+// This function will render the saved content on the page so it stays there until you input new content.
 function renderTextContent() {
     // Converts text in local storage back to an object.
     let storedText = JSON.parse(localStorage.getItem("savedText"));
@@ -101,7 +99,7 @@ function renderTextContent() {
     return;
 };
 
-// save button will run the saveTextContent function
+// This save button will run the saveTextContent function.
 for (q of saveBtn) {
     q.addEventListener("click", function (event) {
         event.preventDefault();
@@ -109,5 +107,5 @@ for (q of saveBtn) {
     }
     )};
 
-// this function must be run separate from any buttons, so that local storage is immediately rendered on the page upon load.
+// This function must be run separate from any buttons, so that local storage is immediately rendered on the page upon load.
 renderTextContent();
