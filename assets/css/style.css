@@ -1,3 +1,10 @@
+:root {
+  --brown: #564a4a;
+  --darkgr: #4aa96c;
+  --lightgr: #9fe6a0;
+  --orange: #f55c47;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -9,17 +16,17 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--brown);
   padding: 10px;
   width: 75%;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  background-color: var(--lightgr);
+  color: var(--brown);
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid var(--brown);
 }
 
 .description {
@@ -42,30 +49,32 @@ textarea {
   color: #000000;
   border-top: 1px dashed #000000;
   width: 8%;
+  padding-top: 5px;
 }
 
 /* Color templates for time signifying */
 .past {
-  background-color: #d3d3d3;
+  background-color: var(--brown);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: var(--orange);
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: var(--darkgr);
   color: white;
 }
 
+/* Save button styling */
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px solid var(--brown);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
+  background-color: var(--lightgr);
+  color: var(--brown);
   width: 8%;
 }
 

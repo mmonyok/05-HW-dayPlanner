@@ -2,9 +2,13 @@
 let timeDisplay = document.getElementById("currentDay");
 let DateTime = luxon.DateTime;
 let today = DateTime.local();
-let hour = {hour: "2-digit"};
+let hour = { hour: "2-digit" };
 let currentHour = DateTime.now().toLocaleString(hour);
 let currentHourStamp = today.get("hour");
+let weekday = DateTime.now().toLocaleString({ weekday: "long" });
+let month = DateTime.now().toLocaleString({ month: "long" });
+let day = DateTime.now().toLocaleString({ day: "numeric" });
+let daySuffix;
 
 // Save related variables
 let saveBtn = document.getElementsByClassName("saveBtn");
@@ -27,24 +31,36 @@ let textContentEl = [
 
 // This array allows me to access the set times for each time slot.
 let setHours = [
-    today.set({hour: 8}),
-    today.set({hour: 9}),
-    today.set({hour: 10}),
-    today.set({hour: 11}),
-    today.set({hour: 12}),
-    today.set({hour: 13}),
-    today.set({hour: 14}),
-    today.set({hour: 15}),
-    today.set({hour: 16}),
-    today.set({hour: 17}),
+    today.set({ hour: 8 }),
+    today.set({ hour: 9 }),
+    today.set({ hour: 10 }),
+    today.set({ hour: 11 }),
+    today.set({ hour: 12 }),
+    today.set({ hour: 13 }),
+    today.set({ hour: 14 }),
+    today.set({ hour: 15 }),
+    today.set({ hour: 16 }),
+    today.set({ hour: 17 }),
 ];
 
-// This displays the current day.
-timeDisplay.textContent = DateTime.now().toLocaleString(DateTime.DATE_HUGE);
+// These statements make sure the day is listed as an ordinal.
+if (day === 1 || day === 21 || day === 31) {
+    daySuffix = "st";
+} else if (day === 2 || day === 22) {
+    daySuffix = "nd";
+} else if (day === 3 || day === 23) {
+    daySuffix = "rd";
+} else {
+    daySuffix = "th";
+}
+
+// This displays the current day, including the day number as an ordinal.
+timeDisplay.textContent = weekday + ", " + month + " " + day + daySuffix;
+
 
 // This loop associates a specific hour with each timeslot.
-for (i = 0; i < hourDiv.length; i++) { 
-    hourDiv[i].textContent = setHours[i].toLocaleString(hour); 
+for (i = 0; i < hourDiv.length; i++) {
+    hourDiv[i].textContent = setHours[i].toLocaleString(hour);
 }
 
 // This loop will change the color of each time slot based on the hour.
@@ -105,7 +121,8 @@ for (q of saveBtn) {
         event.preventDefault();
         saveTextContent();
     }
-    )};
+    )
+};
 
 // This function must be run separate from any buttons, so that local storage is immediately rendered on the page upon load.
 renderTextContent();
