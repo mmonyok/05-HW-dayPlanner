@@ -7,7 +7,7 @@ A micro planner made in class for scheduling.
 - Work can often be hectic, juggling various tasks such as emails, phonecalls, meetings, etc. Planning out your day can reduce stress and anxiety. Organization can always assist with these kinds of problems.
 - This project aims to fix the organizational gap in a busy work day, by providing a simple daily calendar to hold the days work related activities.
 - Think of it as a scratch pad for keeping track of how you want to spend your day.
-- This project helped to better understand local storage and how to utilize some third party APIs.
+- This project helped me to better understand local storage and how to utilize some third party APIs.
 
 ## Usage
 ![Screenshot of finished project.](./images/screenshot.png)
