@@ -1,8 +1,8 @@
 :root {
-  --brown: #564a4a;
-  --darkgr: #4aa96c;
-  --lightgr: #9fe6a0;
-  --orange: #f55c47;
+  --darkest: #564a4a;
+  --medium: #4aa96c;
+  --lightest: #9fe6a0;
+  --colorPop: #f55c47;
 }
 
 body {
@@ -17,7 +17,7 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid var(--brown);
+  border-left: 1px solid var(--darkest);
   padding: 10px;
   width: 75%;
 }
@@ -25,10 +25,10 @@ textarea {
 /* Bootstrap overwrite styling for the big page header. */
 .jumbotron {
   text-align: center;
-  background-color: var(--lightgr);
-  color: var(--brown);
+  background-color: var(--lightest);
+  color: var(--darkest);
   border-radius: 0;
-  border-bottom: 10px solid var(--brown);
+  border-bottom: 10px solid var(--darkest);
 }
 
 .description {
@@ -56,27 +56,27 @@ textarea {
 
 /* Color templates for time signifying */
 .past {
-  background-color: var(--brown);
+  background-color: var(--darkest);
   color: white;
 }
 
 .present {
-  background-color: var(--orange);
+  background-color: var(--colorPop);
   color: white;
 }
 
 .future {
-  background-color: var(--darkgr);
+  background-color: var(--medium);
   color: white;
 }
 
 /* Save button styling */
 .saveBtn {
-  border-left: 1px solid var(--brown);
+  border-left: 1px solid var(--darkest);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: var(--lightgr);
-  color: var(--brown);
+  background-color: var(--lightest);
+  color: var(--darkest);
   width: 8%;
 }
 
