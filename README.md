@@ -11,6 +11,7 @@ A micro planner made in class for scheduling.
 
 ## Usage
 ![Screenshot of finished project.](./images/screenshot.png)
+![Screenshot showing planner in use.](./images/screenshot2.png)
 
 ## Credits
 - Tutorials Followed:
