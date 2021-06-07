@@ -11,6 +11,7 @@ body {
   line-height: 1;
 }
 
+/* Affects the time slot block styling. */
 textarea {
   background: transparent;
   border: none;
@@ -21,6 +22,7 @@ textarea {
   width: 75%;
 }
 
+/* Bootstrap overwrite styling for the big page header. */
 .jumbotron {
   text-align: center;
   background-color: var(--lightgr);
