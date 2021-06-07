@@ -23,6 +23,8 @@ A micro planner made in class for scheduling.
 6. Edit in your code editor and continue to commit, push changes and perform other Git actions using your repository https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html.
 
 ## Usage
+- To utilize this page, click any time slot and enter the text you want for that hour time slot. Click the corresponding save icon to the right and the entered text will be saved, even when the page is refreshed. The clear text just delete it and click the save button. The current hour will be orange-red; future hours will be green; and previous hours will be brown.
+
 ![Screenshot of finished project.](./images/screenshot.png)
 ![Screenshot showing planner in use.](./images/screenshot2.png)
 ![GIF of web application.](images/dayPlannerGIF.gif)
