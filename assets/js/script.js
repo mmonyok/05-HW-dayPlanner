@@ -3,7 +3,6 @@ let timeDisplay = document.getElementById("currentDay");
 let DateTime = luxon.DateTime;
 let today = DateTime.local();
 let hour = { hour: "2-digit" };
-let currentHour = DateTime.now().toLocaleString(hour);
 let currentHourStamp = today.get("hour");
 let weekday = DateTime.now().toLocaleString({ weekday: "long" });
 let month = DateTime.now().toLocaleString({ month: "long" });
@@ -121,7 +120,7 @@ for (q of saveBtn) {
         event.preventDefault();
         saveTextContent();
     }
-    )
+)
 };
 
 // This function must be run separate from any buttons, so that local storage is immediately rendered on the page upon load.
