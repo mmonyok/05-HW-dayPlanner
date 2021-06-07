@@ -9,6 +9,16 @@ A micro planner made in class for scheduling.
 - Think of it as a scratch pad for keeping track of how you want to spend your day.
 - Building this web application helped me to better understand local storage and how to utilize the Luxon API.
 
+## Table of Contents
+- [05-HW-dayPlanner](#05-hw-dayplanner)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Badges](#badges)
+
 ## Installation
 1. Provided that you have a code editor of your choosing installed on your system, such as VS Code (https://code.visualstudio.com/),
 
