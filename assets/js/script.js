@@ -26,7 +26,7 @@ let textContentEl = [
     $("#text15"),
     $("#text16"),
     $("#text17"),
-]
+];
 
 // This array allows me to access the set times for each time slot.
 let setHours = [
@@ -51,7 +51,7 @@ if (day === 1 || day === 21 || day === 31) {
     daySuffix = "rd";
 } else {
     daySuffix = "th";
-}
+};
 
 // This displays the current day, including the day number as an ordinal.
 timeDisplay.textContent = weekday + ", " + month + " " + day + daySuffix;
@@ -60,7 +60,7 @@ timeDisplay.textContent = weekday + ", " + month + " " + day + daySuffix;
 // This loop associates a specific hour with each timeslot.
 for (i = 0; i < hourDiv.length; i++) {
     hourDiv[i].textContent = setHours[i].toLocaleString(hour);
-}
+};
 
 // This loop will change the color of each time slot based on the hour.
 for (z = 0; z < setHours.length; z++) {
@@ -73,7 +73,7 @@ for (z = 0; z < setHours.length; z++) {
     if (setHours[z].get("hour") === currentHourStamp) {
         textContentEl[z].attr("class", "present");
     }
-}
+};
 
 // This function saves the content in the text areas.
 function saveTextContent() {
@@ -110,7 +110,7 @@ function renderTextContent() {
         textArea[7].innerHTML = storedText.hour15;
         textArea[8].innerHTML = storedText.hour16;
         textArea[9].innerHTML = storedText.hour17;
-    }
+    };
     return;
 };
 
@@ -119,8 +119,7 @@ for (q of saveBtn) {
     q.addEventListener("click", function (event) {
         event.preventDefault();
         saveTextContent();
-    }
-)
+    });
 };
 
 // This function must be run separate from any buttons, so that local storage is immediately rendered on the page upon load.
