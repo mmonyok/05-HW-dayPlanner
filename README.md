@@ -5,9 +5,9 @@ A micro planner made in class for scheduling.
 
 ## Description
 - Work can often be hectic, juggling various tasks such as emails, phonecalls, meetings, etc. Planning out your day can reduce stress and anxiety. Organization can always assist with these kinds of problems.
-- This project aims to fix the organizational gap in a busy work day, by providing a simple daily calendar to hold the days work related activities.
+- This web application aims to fix the organizational gap in a busy work day, by providing a simple daily calendar to hold the day's work related activities.
 - Think of it as a scratch pad for keeping track of how you want to spend your day.
-- This project helped me to better understand local storage and how to utilize some third party APIs.
+- Building this web application helped me to better understand local storage and how to utilize the Luxon API.
 
 ## Usage
 ![Screenshot of finished project.](./images/screenshot.png)
