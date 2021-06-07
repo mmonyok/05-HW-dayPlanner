@@ -30,6 +30,14 @@ A micro planner made in class for scheduling.
 ![GIF of web application.](images/dayPlannerGIF.gif)
 
 ## Credits
+- Technologies Used:
+  - [Bootstrap](https://getbootstrap.com/)
+  - [FontAwesome](https://fontawesome.com/)
+  - [Google Fonts](https://fonts.google.com/)
+  - [jQuery](https://jquery.com/)
+  - [Luxon](https://moment.github.io/luxon/)
+  - [ScreenToGIF](https://www.screentogif.com/)
+
 - Tutorials Followed:
 [Professional README guide template provided by Coding Boot Camp.](https://github.com/coding-boot-camp)
 
