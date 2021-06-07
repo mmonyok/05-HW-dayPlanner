@@ -1,7 +1,7 @@
 # 05-HW-dayPlanner
 A micro planner made in class for scheduling.
 
-[Link to live site.](https://mmonyok.github.io/05-HW-dayPlanner/)
+[Live site!](https://mmonyok.github.io/05-HW-dayPlanner/)
 
 ## Description
 - Work can often be hectic, juggling various tasks such as emails, phonecalls, meetings, etc. Planning out your day can reduce stress and anxiety. Organization can always assist with these kinds of problems.
