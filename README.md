@@ -18,6 +18,7 @@ A micro planner made in class for scheduling.
   - [Credits](#credits)
   - [License](#license)
   - [Badges](#badges)
+  - [Contact](#contact)
 
 ## Installation
 1. Provided that you have a code editor of your choosing installed on your system, such as VS Code (https://code.visualstudio.com/),
@@ -93,3 +94,8 @@ SOFTWARE.
 ![Code Lines](https://img.shields.io/tokei/lines/github/mmonyok/05-HW-dayPlanner?color=FF0000&label=Code%20Lines&logo=github&logoColor=FF0000&style=plastic)
 
 ![Follow on Twitter](https://img.shields.io/twitter/follow/sheisthemelody?style=social)
+
+## Contact
+- Melody Monyok
+  - <monyokwebdev@gmail.com>
+  - (612) 492-1528
