@@ -1,5 +1,5 @@
 // Time related variables
-let timeDisplay = document.getElementById("currentDay");
+let timeDisplay = $("#currentDay");
 let DateTime = luxon.DateTime;
 let today = DateTime.local();
 let hour = { hour: "2-digit" };
@@ -54,7 +54,7 @@ if (day === 1 || day === 21 || day === 31) {
 };
 
 // This displays the current day, including the day number as an ordinal.
-timeDisplay.textContent = weekday + ", " + month + " " + day + daySuffix;
+timeDisplay.text(weekday + ", " + month + " " + day + daySuffix);
 
 
 // This loop associates a specific hour with each timeslot.
