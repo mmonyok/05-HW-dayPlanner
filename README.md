@@ -87,7 +87,7 @@ SOFTWARE.
 
 ![Forks](https://img.shields.io/github/forks/mmonyok/05-HW-dayPlanner?color=00FF00&label=Forks&logo=GitHub&logoColor=00FF00&style=plastic)
 
-![License](https://img.shields.io/github/license/mmonyok/05-HW-dayPlanner?color=FFFF00&label=License&logo=github&logoColor=FFFF00&style=plastic)
+![License](https://img.shields.io/github/license/mmonyok/05-HW-dayPlanner?color=FFFF00&label=License&message=MIT&logo=github&logoColor=FFFF00&style=plastic)
 
 ![Repo Size](https://img.shields.io/github/repo-size/mmonyok/05-HW-dayPlanner?color=FF7F00&label=Repo%20Size&logo=github&logoColor=FF7F00&style=plastic)
 
